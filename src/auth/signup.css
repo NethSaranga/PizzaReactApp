@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #1e2752;
+  padding: 10px;
+}
+.cont {
+  display: flex;
+  justify-content: center;
+}
+
+.container-signup {
+  position: relative;
+  max-width: 950px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 0px;
+}
+.container-signup .cover {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  height: 100%;
+  width: 61%;
+  z-index: 98;
+}
+.container-signup .cover::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.4;
+  z-index: 100;
+}
+
+.container-signup .cover img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.container-signup .cover .text {
+  font-size: 28px;
+  text-align: center;
+  font-weight: bolder;
+  position: absolute;
+  z-index: 102;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container-signup form {
+  margin-top: 15px;
+  height: 100%;
+  width: 40%;
+  background: #fff;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.container-signup .form-content {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form .form-content .input-boxes {
+  margin-top: 50px;
+}
+
+form .form-content .input-box {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+  margin-top: 20px;
+}
+
+.form-content .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 1px solid lightgray;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.form-content .input-box .bi {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+form .form-content .button {
+  color: #fff;
+  margin-top: 40px;
+}
+
+form .form-content .button input {
+  color: #fff;
+  background: tomato;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+form .form-content .button input:hover {
+  background: orangered;
+}
+
+#login-text {
+  margin-top: 40px;
+}
+#login-text a {
+  color: tomato;
+  text-decoration: none;
+}
+#login-text a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+#description {
+  font-size: 12px;
+  text-align: center;
+}
+form .form-content .imgBox {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+form .form-content .imgBox img {
+  margin: auto;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+#disclaimer {
+  color: lightgray;
+  font-size: 12px;
+  text-align: center;
+}
